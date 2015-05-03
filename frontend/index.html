@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>THE BEST!!!!</title>
+        <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="./css/styles.css" type="text/css" rel="stylesheet">
+        <!-- BEGIN GOOGLEAPIS SCRIPT -- >
+	<script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYJcvZ6k8x8eAQdPQv-wCUgfd6A_MocyI"></script>
+	<!-- END GOOGLEAPIS SCRIPT --> 
+    </head>
+    <body ng-app="myApp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 main-title text-center">
+                    <h1>THE BEST!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-md-8"> 
+                        <div id="map-canvas"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="control-panel">
+                            <div ng-view></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<!-- BEGIN ANGULAR AND MAP SCRIPTS -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/routing.js"></script>
+        <script src="js/authenticationservice.js"></script>
+        <script src="js/googlemapservice.js"></script>
+        <script src="js/loginCtrl.js"></script>
+        <script src="js/panelCtrl.js"></script>
+        <script src="js/signUpCtrl.js"></script>
+        <script type="text/javascript"></script>
+	<script type="text/javascript" src="js/googlemapservice.js"></script>
+	<!-- END ANGULAR AND MAP SCRIPTS -->
+
+	
+    </body>
+</html>
