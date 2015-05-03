@@ -15,97 +15,39 @@
 <meta name="author" content="Ashley Love Cheng-Ju Chuang Brian Moon">
 
 <title> C.A.B. | Rideshare 2.0</title>   
-
 <meta name="description" content="A taxi, cab, bus, rideshare, carpool service offering alternatives tp Uber, Lyft, and other mobile on-demand taxi alternatives." /> 
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
 <meta name="MobileOptimized" content="320"/>   
-
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
-
 <!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/userstyles.css" rel="stylesheet">
 
 </head>
 
 
 <body>
 
+
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-          <a id="goUp" href="#home-slider" title="C.A.B. | Rideshare 2.0">C.A.B.</a>
-        </div>
-        
+      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>       
         <nav id="menu">
           <ul id="menu-nav">
               <li class="current"><a href="#home-slider">Home</a></li>
                 <li><a href="#work">Our Work</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
-            <li><a href="#myModal" data-toggle="modal">Login/SignUp</a></li>
+            <li><a href="#myModal" data-toggle="modal">Sign Out</a></li>
             </ul>
         </nav>
         
@@ -117,465 +59,177 @@
 
 <!-- End of Splash Screen -->
 
-<!-- Homepage Slider -->
-<div id="home-slider">  
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-      <div id="slidecaption"></div>
-    </div>   
-  
-  <div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Our Work Section -->
-<div id="work" class="page">
-  <div class="container">
-      <!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3>
-                </div>
-            </div>
-        </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-          <div class="span3">
-              <!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                      <li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
+  <div class="userwrapper">
+      <div class="box">
+          <div class="row row-offcanvas row-offcanvas-left">
             
-            <div class="span9">
-              <div class="row">
-                  <section id="projects">
-                      <ul id="thumbs">
+              <!-- main right col -->
+              <div class="column col-sm-12 col-xs-11" id="main">
+                                
+                  <div class="padding">
+                      <div class="full col-sm-9">
                         
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 design">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
+                          <!-- content -->                      
+                          <div class="row">
                             
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 design">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
+                           <!-- main col left --> 
+                           <div class="col-sm-7">
+                             
+                                <div class="panel panel-default">
+                                  <div class="panel-thumbnail"><img src="/home/atl/Programming/FB/img/gmap_generic.png" class="img-responsive"></div>
+                                  <div class="panel-body">
+                                    <p class="lead" style="text-align: center">What's Your Destination?</p>
+                                  </div>
+                                </div>
+
+                             
+                                 <div class="panel panel-default">
+                                  <div class="panel-heading"><h4>Current Booked Destinations</h4></div>
+                                  <div class="panel-body">
+                                    Driver, Passenger, Other passengers, pickup time, vehicle                         </div>
+                                </div>
+
+                                 <div class="panel panel-default">
+                                  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootstrap Examples</h4></div>
+                                    <div class="panel-body">
+                                      <div class="list-group">
+                                        <a href="http://bootply.com/tagged/modal" class="list-group-item">Modal / Dialog</a>
+                                        <a href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime Examples</a>
+                                        <a href="http://bootply.com/tagged/datatable" class="list-group-item">Data Grids</a>
+                                      </div>
+                                    </div>
+                                </div>
+                             
+                                <div class="well"> 
+                                     <form class="form-horizontal" role="form">
+                                      <h4>Post for a Ride</h4>
+                                       <div class="form-group" style="padding:14px;">
+                                        <textarea class="form-control" placeholder="Update your status"></textarea>
+                                      </div>
+                                      <button class="btn btn-primary pull-right" type="button">Post</button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
+                                    </form>
+                                </div>
+                             
+                                <div class="panel panel-default">
+                                   <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>More Templates</h4></div>
+                                    <div class="panel-body">
+                                      <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">Free @Bootply</a>
+                                      <div class="clearfix"></div>
+                                      There a load of new free Bootstrap 3 ready templates at Bootply. All of these templates are free and don't require extensive customization to the Bootstrap baseline.
+                                      <hr>
+                                      <ul class="list-unstyled"><li><a href="http://www.bootply.com/templates">Dashboard</a></li><li><a href="http://www.bootply.com/templates">Darkside</a></li><li><a href="http://www.bootply.com/templates">Greenfield</a></li></ul>
+                                    </div>
+                                </div>
+                             
+                                <div class="panel panel-default">
+                                  <div class="panel-heading"><h4>What Is Bootstrap?</h4></div>
+                                  <div class="panel-body">
+                                    Bootstrap is front end frameworkto build custom web applications that are fast, responsive &amp; intuitive. It consist of CSS and HTML for typography, forms, buttons, tables, grids, and navigation along with custom-built jQuery plug-ins and support for responsive layouts. With dozens of reusable components for navigation, pagination, labels, alerts etc..                          </div>
+                                </div>
+
+                                
+                             
+                            </div>
                             
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 photography">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
+                            <!-- main col right -->
+                            <div class="col-sm-5">
+
+                                <div class="panel panel-default">
+                                  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Start My Destination</h4></div>
+                                    <div class="panel-body">
+                                      <div class="list-group">
+                                        <a href="http://bootply.com/tagged/modal" class="list-group-item">Book Ride</a>
+                                        <a href="http://bootply.com/tagged/datetime" class="list-group-item">View  History</a>
+                                        <a href="http://bootply.com/tagged/datatable" class="list-group-item">Edit Profile</a>
+                                        <a href="http://bootply.com/tagged/datatable" class="list-group-item">Browse Destinations</a>
+                                      </div>
+                                    </div>
+                                </div>
+                                 
+                                  <div class="well"> 
+                                     <form class="form">
+                                      <h4>Sign-up</h4>
+                                      <div class="input-group text-center">
+                                      <input type="text" class="form-control input-lg" placeholder="Enter your email address">
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
+                                      </div>
+                                    </form>
+                                  </div>
+                        
+                                 <div class="panel panel-default">
+                                   <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
+                                    <div class="panel-body">
+                                      <p><img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p>
+                                      <div class="clearfix"></div>
+                                      <hr>
+                                      Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                                    </div>
+                                 </div>
+                              
+                                 <div class="panel panel-default">
+                                   <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Stackoverflow</h4></div>
+                                    <div class="panel-body">
+                                      <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a>
+                                      <div class="clearfix"></div>
+                                      <hr>
+                                      
+                                      <p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.</p>
+                                      
+                                      <hr>
+                                      <form>
+                                      <div class="input-group">
+                                        <div class="input-group-btn">
+                                        <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Add a comment..">
+                                      </div>
+                                      </form>
+                                      
+                                    </div>
+                                 </div>
+
+                                 <div class="panel panel-default">
+                                   <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Portlet Heading</h4></div>
+                                    <div class="panel-body">
+                                      <ul class="list-group">
+                                      <li class="list-group-item">Modals</li>
+                                      <li class="list-group-item">Sliders / Carousel</li>
+                                      <li class="list-group-item">Thumbnails</li>
+                                      </ul>
+                                    </div>
+                                 </div>
+                              
+                                 <div class="panel panel-default">
+                                  <div class="panel-thumbnail"><img src="/assets/example/bg_4.jpg" class="img-responsive"></div>
+                                  <div class="panel-body">
+                                    <p class="lead">Social Good</p>
+                                    <p>1,200 Followers, 83 Posts</p>
+                                    
+                                    <p>
+                                      <img src="https://lh6.googleusercontent.com/-5cTTMHjjnzs/AAAAAAAAAAI/AAAAAAAAAFk/vgza68M4p2s/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                                      <img src="https://lh4.googleusercontent.com/-6aFMDiaLg5M/AAAAAAAAAAI/AAAAAAAABdM/XjnG8z60Ug0/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                                      <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px">
+                                    </p>
+                                  </div>
+                                </div>
+                              
+                            </div>
+                         </div><!--/row-->
+
                             
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 video">
-                              <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                              <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
-                          <!-- End Item Project -->
-                            
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 photography">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
-                            
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 photography">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
-                            
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 video">
-                              <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                              <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
-                          <!-- End Item Project -->
-                            
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 design">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
-                            
-              <!-- Item Project and Filter Name -->
-                          <li class="item-thumbs span3 design">
-                              <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                              <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
-                                  <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                          <!-- End Item Project -->
-                        </ul>
-                    </section>
-                    
+                          </div>
+                      </div><!-- /col-9 -->
+                  </div><!-- /padding -->
               </div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
+              <!-- /main -->
+            
+          </div>
+      </div>
 
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">About Us</h2>
-                <h3 class="title-description">Learn About our Team.</h3>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- People -->
-    <div class="row">
-      
-        <!-- Start Profile -->
-      <div class="span4 profile">
-          <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Backend</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="Cheng-Ju Chuang">
-            </div>
-            <h3 class="profile-name">C . &nbsp&nbsp Chuang</h3>
-            <p class="profile-description"> Hi, I'm Cheng-Ju, but everyone calls me Jeremy. I have been working on the backend elements, such as node, algorithms, and integration. In
-              my spare time I like to wear trendy clothes and get even more trendy haircuts.</p>
-              
-            <div class="social">
-              <ul class="social-icons">
-                    <li><a href="https://www.linkedin.com/pub/cheng-ju-chuang/85/172/b52"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="mailto:jeremhh@gmail.com ?subject=C.A.B."><i class="font-icon-social-email"></i></a></li>
-                    <li><a href="https://www.facebook.com/jeremhh/notes"><i class="font-icon-social-facebook"></i></a></li>
-        <li><a href="https://plus.google.com/u/0/115684019045830517150/about"><i class="font-icon-social-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-      <div class="span4 profile">
-          <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Backend + UX</span>
-                </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Ashley Love">
-            </div>
-            <h3 class="profile-name">A . &nbsp&nbsp Love</h3>
-            <p class="profile-description">Hey, I'm Ashley!  For this idea, I helped with integration, our secret sauce (aka the algorithms),
-             and the frontend. I use to be an electrical engineer, but I've found that I'm much more passionate about software.
-             Since grad school keeps me so busy, I find it hard to sleep, socialize, or be interesting...but that will all change on May23rd (I hope)!</p>
-              
-            <div class="social">
-              <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/atlove"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="mailto:thejbnomore@gmail.com?subject=C.A.B."><i class="font-icon-social-email"></i></a></li>
-       <li><a href="https://plus.google.com/u/0/111998235146729771017/posts"><i class="font-icon-social-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-      <div class="span4 profile">
-          <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Frontend</span>
-                </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Brian Moon">
-            </div>
-            <h3 class="profile-name">B . &nbsp&nbsp Moon</h3>
-            <p class="profile-description">Hi, I'm Brian. If you don't know, I'm really popular. Women attack me with bear hugs in libraries so I try and stay hidden
-            (the reason for no picture). I have a black jacket and black rimmed glasses that I'm quite fond of. So in addition to wearing
-            black and being a Bio major (doesn't make any sense right?), I helped with the frontend and passenger requests. Go figure.</p>
-              
-            <div class="social">
-              <ul class="social-icons">
-                    <li><a href="https://www.linkedin.com/in/briandoylemoon"><i class="font-icon-social-linkedin"></i></a></li>
-        <li><a href="mailto:Brian.Moon@sjsu.edu?subject=C.A.B."><i class="font-icon-social-email"></i></a></li>
-                    <li><a href="https://plus.google.com/u/0/111146882685621392089/about"><i class="font-icon-social-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
-
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-      <div class="span9">
-        
-          <form id="contact-form" class="contact-form" action="#">
-              <p class="contact-name">
-                <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                  <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                  <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                  <a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
-                </div>
-            </form>
-         
-        </div>
-        
-        <div class="span3">
-          <div class="contact-details">
-            <h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">mycab@ride.com</a></li>
-                    <li>(408) 408-4084</li>
-                    <li>
-                        C.A.B.
-                        <br>
-                        1 Washington Square
-                        <br>
-                        San Jose, CA
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact Form -->
-</div>
-</div>
-<!-- End Contact Section -->
-
-<!-- Twitter Feed -->
-<div id="twitter-feed" class="page-alternate">
-  <div class="container">
-      <div class="row">
-            <div class="span12">
-                <div class="follow">
-                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
-                </div>
-                    
-                <div id="ticker" class="query"> 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Twitter Feed -->
-
-<!-- Socialize -->
-<div id="social-area" class="page">
-  <div class="container">
-      <div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
-                        <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
-                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
-                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Socialize -->
-
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
-        <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
-            <ul class="cd-switcher">
-                <li><a href="#0">Sign in</a></li>
-                <li><a href="#0">New account</a></li>
-            </ul>
-
-            <div id="cd-login"> <!-- log in form -->
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-password" for="signin-password">Password</label>
-                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
-                        <a href="#0" class="hide-password">Hide</a>
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input type="checkbox" id="remember-me" checked>
-                        <label for="remember-me">Remember me</label>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="center-button" type="submit" value="Login">
-                    </p>
-                </form>
-                
-                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
-                <!-- <a href="#0" class="cd-close-form">Close</a> -->
-            </div> <!-- cd-login -->
-
-            <div id="cd-signup"> <!-- sign up form -->
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-username" for="signup-username">Username</label>
-                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace cd-password" for="signup-password">Password</label>
-                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
-                        <a href="#0" class="hide-password">Hide</a>
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="center-button" type="submit" value="Create account">
-                    </p>
-                </form>
-
-                <!-- <a href="#0" class="cd-close-form">Close</a> -->
-            </div> <!-- cd-signup -->
-
-            <div id="cd-reset-password"> <!-- reset password form -->
-                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-                <form class="cd-form">
-                    <p class="fieldset">
-                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                        <span class="cd-error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="full-width has-padding" type="submit" value="Reset password">
-                    </p>
-                </form>
-
-                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-            </div> <!-- cd-reset-password -->
-            <a href="#0" class="cd-close-form">Close</a>
-        </div> <!-- cd-user-modal-container -->
-    </div> <!-- cd-user-modal -->
-</div>
-
-
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 
 
@@ -584,22 +238,15 @@
 
 
 <!-- Footer -->
-<footer>
+<footer class="footer-user">
   <p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
 </footer>
 <!-- End Footer -->
 
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-  <i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
-
-
 <!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<!-- jQuery Core -->
 <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
 <script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
 <script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
 <script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
@@ -623,6 +270,21 @@
   Localize.setLanguage('de');
 </script>
 <!-- End Js -->
+
+<!-- BEGIN SCRIPTS FOR MAP -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/routing.js"></script>
+    <script src="js/authenticationservice.js"></script>
+    <script src="js/googlemapservice.js"></script>
+    <script src="js/loginCtrl.js"></script>
+    <script src="js/panelCtrl.js"></script>
+    <script src="js/signUpCtrl.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/googlemapservice.js"></script>
+<!-- END SCRIPTS FOR MAP -->
 
 </body>
 </html>
