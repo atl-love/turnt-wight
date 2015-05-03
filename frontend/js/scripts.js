@@ -25,4 +25,12 @@ $(function () {
     });
 });
 
-$("#bookride").collapse('toggle')
+/* *****************************************************************
+	POPOVER SETTINGS
+******************************************************************* */
+$(document).ready(function(){
+    $("#driver").tootltip();   
+});
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
