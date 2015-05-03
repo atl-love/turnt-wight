@@ -24,3 +24,5 @@ $(function () {
         $(this).siblings("h3").removeClass("current");
     });
 });
+
+$("#bookride").collapse('toggle')
